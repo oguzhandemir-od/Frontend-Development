@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap 5 Tutorials</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- RD -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="template.css" />
+  </head>
+
+  <body class="container" data-bs-spy="scroll" data-bs-target="#navbar_id" data-bs-offset="0">
+    <!-- Start Code -->
+
+    <hr />
+    <br /><br />
+    <h1>Navbar</h1>
+    <!-- Navbar Start -->
+    <nav id="navbar_id" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page"
+                >Home <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                href="#product_id"
+                data-bs-toggle="modal"
+                >Ürünler</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                href="#aboutme_id"
+                data-bs-toggle="modal"
+                >Hakkımızda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#login_id"
+                href="#"
+                data-bs-toggle="modal"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#register_id"
+                >Register</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <hr />
+    <br /><br />
+    <h1>Off Canvas</h1>
+    <!-- <button
+      class="btn btn-primary"
+      type="button"
+      
+      aria-controls="login_id"
+    >
+      Enable both scrolling & backdrop
+    </button> -->
+
+    <!-- Login Off Canvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="login_id"
+      aria-labelledby="Enable both scrolling & backdrop"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="Enable both scrolling & backdrop">
+          Login
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form action="">
+          <div class="container">
+            <div class="row">
+              <div class="form-group mb-4 shadow">
+                <label for="uemail">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="uemail"
+                  placeholder="Email"
+                  title="Email"
+                />
+                <small id="emailHelp" class="d-none form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group mb-4 shadow">
+                <label for="upassword">Parola</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="upassword"
+                  placeholder="Parola"
+                  title="Parola"
+                />
+                <small id="passwordHelp" class="d-none form-text text-muted"
+                  >Parola</small
+                >
+              </div>
+              <div class="form-group mb-4 col-sm-12 col-md-12 col-lg-12 shadow">
+                <input type="reset" value="Temizle" class="btn btn-danger" />
+                <button type="reset" class="btn btn-primary">Gönder</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>Carousel</h1>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#carouselId"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="First slide"
+        ></li>
+        <li
+          data-bs-target="#carouselId"
+          data-bs-slide-to="1"
+          aria-label="Second slide"
+        ></li>
+        <li
+          data-bs-target="#carouselId"
+          data-bs-slide-to="2"
+          aria-label="Third slide"
+        ></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img
+            src="../images/case.jpeg"
+            class="w-100 d-block"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../images/computer_2.jpg"
+            class="w-100 d-block"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../images/computer_3.jpeg"
+            class="w-100 d-block"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselId"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselId"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div
+      class="modal fade"
+      id="register_id"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      role="dialog"
+      aria-labelledby="modalTitleId"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Body</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <form action="">
+              <div class="container">
+                <div class="row">
+                  <div class="form-group mb-4 shadow">
+                    <label for="ufullname">Ad Soyad</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ufullname"
+                      placeholder="Ad Soyad"
+                      title="Adınız Soyadınız"
+                    />
+                    <small id="fullnameHelp" class="d-none form-text text-muted"
+                      >Ad Soyad</small
+                    >
+                  </div>
+                  <div class="form-group mb-4 shadow">
+                    <label for="uemail">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="uemail"
+                      placeholder="Email"
+                      title="Email"
+                    />
+                    <small id="emailHelp" class="d-none form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group mb-4 shadow">
+                    <label for="upassword">Parola</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="upassword"
+                      placeholder="Parola"
+                      title="Parola"
+                    />
+                    <small id="passwordHelp" class="d-none form-text text-muted"
+                      >Parola</small
+                    >
+                  </div>
+                  <div
+                    class="form-group mb-4 col-sm-12 col-md-12 col-lg-12 shadow"
+                  >
+                    <input
+                      type="reset"
+                      value="Temizle"
+                      class="btn btn-danger"
+                    />
+                    <button type="reset" class="btn btn-primary">Gönder</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <!-- <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+     </script> -->
+
+    <hr />
+    <br /><br />
+    <h1>BreadCrumb</h1>
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="#">Main</a>
+      <a class="breadcrumb-item" href="#">Sub</a>
+      <span class="breadcrumb-item active" aria-current="page">Active</span>
+    </nav>
+
+<main>
+  <section id="product_id">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4"><div class="card">
+          <img class="card-img-top" src="" alt="Resim" />
+          <div class="card-body">
+            <h4 class="card-title">Başlık</h4>
+            <p class="card-text line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad sint accusamus, consectetur autem obcaecati delectus, consequatur, minus deserunt voluptatem id consequuntur distinctio illo reiciendis neque quidem temporibus! Ad, quia.</p>
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="" alt="Resim" />
+            <div class="card-body">
+              <h4 class="card-title">Başlık</h4>
+              <p class="card-text line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad sint accusamus, consectetur autem obcaecati delectus, consequatur, minus deserunt voluptatem id consequuntur distinctio illo reiciendis neque quidem temporibus! Ad, quia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="" alt="Resim" />
+            <div class="card-body">
+              <h4 class="card-title">Başlık</h4>
+              <p class="card-text line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad sint accusamus, consectetur autem obcaecati delectus, consequatur, minus deserunt voluptatem id consequuntur distinctio illo reiciendis neque quidem temporibus! Ad, quia.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="aboutme_id">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <img src="" class="img" alt="">
+        </div>
+        <div class="col-6">
+          <p class="display-4">
+            Başlık Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vero suscipit possimus ipsa eveniet nemo cum explicabo est exercitationem inventore incidunt necessitatibus eos quo magnam iusto perferendis, nisi modi dolorem.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+    <hr />
+    <br /><br />
+    <h1>Tooltip</h1>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Tooltip Content"
+    >
+      Button name
+    </button>
+    
+
+    <hr />
+    <br /><br />
+    <h1>Pagination</h1>
+    <nav aria-label="Page navigation">
+      <ul
+        class="pagination    "
+      >
+        <li class="page-item disabled">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+
+    <hr />
+    <br /><br />
+    <h1>Spinner</h1>
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-secondary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-danger" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-info" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-dark" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>Collapse</h1>
+    <p>
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        href="#contentId"
+        aria-expanded="false"
+        aria-controls="contentId"
+      >
+        Show
+      </a>
+    </p>
+    <div class="collapse" id="contentId">
+      1.satır açıklama
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione similique, praesentium harum maiores fuga minima porro animi et, delectus quaerat mollitia repudiandae aperiam commodi exercitationem deserunt aspernatur! Necessitatibus, distinctio.
+      Consequatur beatae vero sequi consequuntur iste dolorum repudiandae atque error aperiam repellendus ullam quia voluptatibus blanditiis corporis, eveniet dolore vitae, voluptatum facere? Iste, nesciunt provident! Aliquid deserunt rerum illum consectetur.
+    </div>
+    
+    <hr />
+    <br /><br />
+    <h1>Card</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4"><div class="card">
+          <img class="card-img-top" src="" alt="Resim" />
+          <div class="card-body">
+            <h4 class="card-title">Başlık</h4>
+            <p class="card-text line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad sint accusamus, consectetur autem obcaecati delectus, consequatur, minus deserunt voluptatem id consequuntur distinctio illo reiciendis neque quidem temporibus! Ad, quia.</p>
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="" alt="Resim" />
+            <div class="card-body">
+              <h4 class="card-title">Başlık</h4>
+              <p class="card-text line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad sint accusamus, consectetur autem obcaecati delectus, consequatur, minus deserunt voluptatem id consequuntur distinctio illo reiciendis neque quidem temporibus! Ad, quia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="" alt="Resim" />
+            <div class="card-body">
+              <h4 class="card-title">Başlık</h4>
+              <p class="card-text line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad sint accusamus, consectetur autem obcaecati delectus, consequatur, minus deserunt voluptatem id consequuntur distinctio illo reiciendis neque quidem temporibus! Ad, quia.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="" alt="Resim" />
+      <div class="card-body">
+        <h4 class="card-title">Başlık</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ad sint accusamus, consectetur autem obcaecati delectus, consequatur, minus deserunt voluptatem id consequuntur distinctio illo reiciendis neque quidem temporibus! Ad, quia.</p>
+      </div>
+    </div>
+    
+
+    <hr />
+    <br /><br />
+    <h1>Toast</h1>
+    <!-- Flexbox container for aligning the toasts -->
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="d-flex justify-content-end align-items-end"
+      style="min-height: 200px"
+    >
+      <!-- Then put toasts within -->
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="" class="rounded me-2" alt="{4:Bootstrap}" />
+          <strong class="me-auto">{4:Bootstrap}</strong>
+          <small>{5:11 mins ago}</small>
+          <button
+            type="button"
+            class="ms-2 mb-1 close"
+            data-dismiss="toast"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">Hello, world! This is a toast message.</div>
+      </div>
+    </div>
+
+    $('.toast').toast(option)
+
+    <hr />
+    <br /><br />
+    <h1>Form</h1>
+
+    <form action="">
+      <div class="container">
+        <div class="row">
+          <div class="form-group mb-4 col-sm-12 col-md-6 col-lg-4 shadow">
+            <label for="ufullname">Ad Soyad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ufullname"
+              placeholder="Ad Soyad"
+              title="Adınız Soyadınız"
+            />
+            <small id="fullnameHelp" class="form-text text-muted"
+              >Ad Soyad</small
+            >
+          </div>
+          <div class="form-group mb-4 col-sm-12 col-md-6 col-lg-4 shadow">
+            <label for="uemail">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="uemail"
+              placeholder="Email"
+              title="Email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group mb-4 col-sm-12 col-md-6 col-lg-4 shadow">
+            <label for="upassword">Parola</label>
+            <input
+              type="password"
+              class="form-control"
+              id="upassword"
+              placeholder="Parola"
+              title="Parola"
+            />
+            <small id="passwordHelp" class="form-text text-muted">Parola</small>
+          </div>
+          <div class="form-group mb-4 col-sm-12 col-md-12 col-lg-12 shadow">
+            <input type="reset" value="Temizle" class="btn btn-danger" />
+            <button type="reset" class="btn btn-primary">Gönder</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <hr />
+    <br /><br />
+    <h1>Responsive Design</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-primary">
+          <p class="line-clamp6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus culpa consequatur rerum deserunt eveniet dolor itaque
+            earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus
+            delectus ipsa odio voluptas in suscipit! Ab aliquid neque eveniet
+            odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi
+            deleniti, quibusdam similique rerum non vitae repellat quo
+            reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-secondary">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus culpa consequatur rerum deserunt eveniet dolor itaque
+            earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus
+            delectus ipsa odio voluptas in suscipit! Ab aliquid neque eveniet
+            odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi
+            deleniti, quibusdam similique rerum non vitae repellat quo
+            reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-success">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus culpa consequatur rerum deserunt eveniet dolor itaque
+            earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus
+            delectus ipsa odio voluptas in suscipit! Ab aliquid neque eveniet
+            odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi
+            deleniti, quibusdam similique rerum non vitae repellat quo
+            reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-info">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus culpa consequatur rerum deserunt eveniet dolor itaque
+            earum aperiam amet nostrum voluptates dolore perspiciatis, ducimus
+            delectus ipsa odio voluptas in suscipit! Ab aliquid neque eveniet
+            odio ducimus optio assumenda ea blanditiis, earum hic saepe. Animi
+            deleniti, quibusdam similique rerum non vitae repellat quo
+            reiciendis cupiditate, blanditiis, culpa harum minus ratione. Harum!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>Table</h1>
+    <div class="table-responsive-md">
+      <table
+        class="table table-primary table-hover table-striped table-responsive"
+      >
+        <thead>
+          <tr>
+            <th scope="col">Column 1</th>
+            <th scope="col">Column 2</th>
+            <th scope="col">Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td scope="row">R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+          <tr class="">
+            <td scope="row">Item</td>
+            <td>Item</td>
+            <td>Item</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>List</h1>
+    <ul class="list-group list-group-numbered">
+      <li class="list-group-item active">Active item</li>
+      <li class="list-group-item">Item</li>
+      <li class="list-group-item disabled">Disabled item</li>
+    </ul>
+
+    <br /><br />
+    <ul class="list-group">
+      <li class="list-group-item">List Item-1</li>
+      <li class="list-group-item">List Item-2</li>
+      <li class="list-group-item">List Item-3</li>
+      <li class="list-group-item">List Item-4</li>
+      <li class="list-group-item">List Item-5</li>
+    </ul>
+
+    <hr />
+    <br /><br />
+    <h1>Alert</h1>
+    <div class="alert alert-dark alert-dismissible fade show" role="alert">
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+    </div>
+
+    <div class="alert alert-info" role="alert">
+      <strong>Alert Heading</strong> Some Word
+    </div>
+
+    <div class="alert alert-primary" role="alert">Bu bir Alert Primary</div>
+    <div class="alert alert-secondary" role="alert">Bu bir Alert Secondary</div>
+    <div class="alert alert-danger" role="alert">Bu bir Alert Danger</div>
+    <div class="alert alert-warning" role="alert">Bu bir Alert Warning</div>
+    <div class="alert alert-dark" role="alert">Bu bir Alert Dark</div>
+
+    <hr />
+    <br /><br />
+    <h1>Float, Clearfix</h1>
+    <div class="container mb-4 mt-4">
+      <div class="clearfix">
+        <div class="float-end p-2 mb-2 bg-dark text-white">
+          <p>SAĞA YASLA</p>
+        </div>
+
+        <div class="float-start p-2 mb-2 bg-warning text-white">
+          <p>SOLA YASLA</p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>Image Shadow, Rounded</h1>
+    <div style="height: 200px">
+      <img
+        class="w-50 mh-50 shadow-lg rounded-circle img-fluid img-thumbnail rounded"
+        src="../images/computer.jpeg"
+        alt="Not image"
+      />
+    </div>
+
+    <br /><br /><br /><br />
+    <hr />
+    <br /><br />
+    <h1>Image Shadow</h1>
+    <div style="height: 200px">
+      <img
+        class="w-50 mh-50 shadow img-fluid img-thumbnail rounded"
+        src="../images/computer.jpeg"
+        alt="Not image"
+      />
+    </div>
+    <br /><br /><br /><br />
+    <hr />
+    <br /><br />
+    <h1>Image</h1>
+    <div style="height: 200px">
+      <img
+        class="w-50 mh-50 img-fluid img-thumbnail rounded"
+        src="../images/computer.jpeg"
+        alt="Not image"
+      />
+    </div>
+    <br /><br /><br /><br />
+    <div style="height: 200px">
+      <img class="w-25 h-50" src="../images/computer.jpeg" alt="Not image" />
+    </div>
+    <hr />
+    <br /><br />
+    <h1>Size Height</h1>
+    <div style="height: 100px; background-color: blue">
+      <div class="h-25 bg-warning text-black mt-2 mb-2">H-25</div>
+      <div class="h-50 bg-warning text-black mt-2 mb-2">H-25</div>
+      <div class="h-75 bg-warning text-black mt-2 mb-2">H-25</div>
+      <div class="h-100 bg-warning text-black mt-2 mb-2">H-25</div>
+    </div>
+
+    <hr />
+    <br /><br />
+    <h1>Size Width</h1>
+    <div class="p-3 bg-primary text-dark">1. KUTU</div>
+    <div class="p-3 bg-primary text-white w-25 mt-3 mb-3">2. KUTU</div>
+    <div class="p-3 bg-primary text-white w-50 mt-3 mb-3">3. KUTU</div>
+    <div class="p-3 bg-primary text-white w-75 mt-3 mb-3">4. KUTU</div>
+    <div class="p-3 bg-primary text-white w-100 mt-3 mb-3">5. KUTU</div>
+
+    <hr />
+    <br /><br />
+    <h1>Display</h1>
+    <a href="#" class="link link-success d-table">Link Success</a>
+    <a href="#" class="link link-success d-grid">Link Success</a>
+    <a href="#" class="link link-success d-inline-flex">Link Success</a>
+    <a href="#" class="link link-success d-flex">Link Success</a>
+    <a href="#" class="link link-success d-inline-block">Link Success</a>
+    <a href="#" class="link link-success d-block">Link Success</a>
+    <a href="#" class="link link-success d-none">Link Success</a>
+
+    <hr />
+    <br /><br />
+    <h1>Link</h1>
+    <a href="#" class="link link-success">Link Success</a>
+    <a href="#" class="link link-danger">Link Danger</a>
+    <a href="#" class="btn btn-primary link-success">Link Success</a>
+
+    <hr />
+    <br /><br />
+    <h1>Button</h1>
+    <button class="btn btn-primary mb-3 mt-3">Button Primary</button><br />
+    <button class="btn btn-secondary mb-3 mt-3">Button Secondary</button><br />
+    <button class="btn btn-danger mb-3 mt-3">Button Danger</button><br />
+    <button class="btn btn-outline-danger mb-3 mt-3">Button D-Outline</button
+    ><br />
+    <button class="btn btn-link mb-3 mt-3">Button Link</button><br />
+    <button class="btn btn-warning btn-sm mb-3 mt-3">Button Warning</button
+    ><br />
+    <button class="btn btn-warning btn-md mb-3 mt-3">Button Warning</button
+    ><br />
+    <button class="btn btn-warning btn-lg mb-3 mt-3">Button Warning</button
+    ><br />
+    <button class="btn btn-warning d-block mb-3 mt-3">Button Warning</button
+    ><br />
+
+    <hr />
+    <br /><br />
+    <h1>Padding: 0-1-2-3-4-5</h1>
+    <p class="text-primary border border-2 border-danger rounded mx-3 px-5">
+      px-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded my-3 py-5">
+      py-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded mt-3 pt-3">
+      pt-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded mb-3 pb-3">
+      pb-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded ms-3 ps-3">
+      ps-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded me-3 pe-3">
+      pe-3
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-1 p-1">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-2 p-2">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-3 p-3">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-4 p-4">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-5 p-5">
+      Bu margin örneğidir
+    </p>
+
+    <hr />
+    <br /><br />
+    <h1>Margin: 0-1-2-3-4-5</h1>
+    <p class="text-primary border border-2 border-danger rounded mx-3">mx-3</p>
+    <p class="text-primary border border-2 border-danger rounded my-3">my-3</p>
+    <p class="text-primary border border-2 border-danger rounded mt-3">mt-3</p>
+    <p class="text-primary border border-2 border-danger rounded mb-3">mb-3</p>
+    <p class="text-primary border border-2 border-danger rounded ms-3">ms-3</p>
+    <p class="text-primary border border-2 border-danger rounded me-3">me-3</p>
+    <p class="text-primary border border-2 border-danger rounded m-1">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-2">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-3">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-4">
+      Bu margin örneğidir
+    </p>
+    <p class="text-primary border border-2 border-danger rounded m-5">
+      Bu margin örneğidir
+    </p>
+
+    <hr />
+    <br /><br />
+    <h1>Rounded</h1>
+    <p class="text-capitalize text-center border rounded">ROUNDED</p>
+    <p class="text-capitalize text-center border rounded-top">TOP</p>
+    <p class="text-capitalize text-center border rounded-bottom">BOTTOM</p>
+    <p class="text-capitalize text-center border rounded-start">LEFT</p>
+    <p class="text-capitalize text-center border rounded-end">RIGHT</p>
+
+    <hr />
+    <br /><br />
+    <h1>Border</h1>
+    <p class="text-capitalize text-center border">CENTER</p>
+    <p class="text-capitalize text-center border border-primary">CENTER</p>
+    <p class="text-capitalize text-center border border-secondary">CENTER</p>
+    <p class="text-capitalize text-center border border-secondary border-1">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-2">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-3">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-4">
+      CENTER
+    </p>
+    <p class="text-capitalize text-center border border-secondary border-5">
+      CENTER
+    </p>
+
+    <hr />
+    <br /><br />
+    <h1>Text</h1>
+    <p class="bg-dark text-white text-capitalize text-center">CENTER</p>
+    <p class="bg-dark text-white text-capitalize text-end">RIGHT</p>
+    <p class="bg-dark text-white text-capitalize text-start">LEFT</p>
+    <p class="bg-dark text-white text-capitalize">Bu bir yazıdır</p>
+    <p class="bg-dark text-white text-lowercase">Bu bir yazıdır</p>
+    <p class="bg-dark text-white text-uppercase">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fst-italic">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fst-normal">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fw-bold">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fw-bolder">Bu bir yazıdır</p>
+    <p class="bg-dark text-white fw-light">Bu bir yazıdır</p>
+    <p class="bg-info text-warning fs-1">Font</p>
+    <p class="bg-info text-warning fs-2">Font</p>
+    <p class="bg-info text-warning fs-3">Font</p>
+    <p class="bg-info text-warning fs-4">Font</p>
+    <p class="bg-info text-warning fs-5">Font</p>
+    <p class="bg-info text-warning fs-6">Font</p>
+
+    <hr />
+    <br /><br />
+    <h1>Background Color</h1>
+    <p class="display-1 bg-dark text-primary">Color-primary</p>
+    <p class="display-1 bg-dark text-secondary">Color-secondary</p>
+    <p class="display-1 bg-dark text-danger">Color-danger</p>
+    <p class="display-1 bg-dark text-warning">Color-warning</p>
+    <p class="display-1 bg-dark text-info">Color-info</p>
+    <p class="display-1 bg-info text-dark">Color-dark</p>
+    <p class="display-1 bg-dark text-light">Color-light</p>
+    <p class="display-1 bg-light text-muted">Color-muted</p>
+
+    <hr />
+    <br /><br />
+    <h1>Color</h1>
+    <p class="display-1 text-primary">Color-primary</p>
+    <p class="display-1 text-secondary">Color-secondary</p>
+    <p class="display-1 text-danger">Color-danger</p>
+    <p class="display-1 text-warning">Color-warning</p>
+    <p class="display-1 text-info">Color-info</p>
+    <p class="display-1 text-dark">Color-dark</p>
+    <p class="display-1 text-light">Color-light</p>
+    <p class="display-1 text-muted">Color-muted</p>
+
+    <hr />
+    <br /><br />
+    <h1>Display (6)</h1>
+    <p class="display-1">Display-1</p>
+    <p class="display-2">Display-2</p>
+    <p class="display-3">Display-3</p>
+    <p class="display-4">Display-4</p>
+    <p class="display-5">Display-5</p>
+    <p class="display-6">Display-6</p>
+
+    <hr />
+    <br /><br />
+    <h1>Heading (6)</h1>
+    <p class="h1">Heading-1</p>
+    <p class="h2">Heading-2</p>
+    <p class="h3">Heading-3</p>
+    <p class="h4">Heading-4</p>
+    <p class="h5">Heading-5</p>
+    <p class="h6">Heading-6</p>
+
+    <hr />
+    <br /><br />
+    <p class="text-primary">Merhaba</p>
+    <!-- End Code -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">1.ALAN</div>
+        <div class="col-md-6">2.ALAN</div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Tutorials</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="jQuery.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"
+        integrity="sha512-MlEyuwT6VkRXExjj8CdBKNgd+e2H+aYZOCUaCrt9KRk6MlZDOs91V1yK22rwm8aCIsb5Ec1euL8f0g58RKT/Pg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body class="container">
+    <!-- Start Code -->
+     <form id="login_form" action="" method="post">
+        <label for="uemail">Email</label>
+        <input type="text" id="uemail" name="uemail">
+        <br>
+        <label for="upassword">Password</label>
+        <input type="text" id="upassword" name="upassword">
+        <br>
+        <button id="submit_id" type="submit">Gönder</button>
+     </form>
+     <script>
+        $(document).ready(function(){
+            $("#login_form").submit(function(event){
+                event.preventDefault();
+                // Form verilerini al
+                let allFormData=$(this).serialize();
+
+                // Form verileri
+                console.log(allFormData);
+            })
+
+            $("#submit_id").click(function(){
+                var email=$.trim($("#uemail").val());
+                var password=jQuery.trim($("#upassword").val());
+                alert("Email: "+email+" Password: "+password);
+                console.log(`Email: ${email}\n Password: ${password}`);
+            })
+        });
+     </script>
+     <br><br>
+     <hr>
+    <button id="mouse_id">Mouse</button>
+    <button id="keyboard_id">Keyboard</button>
+
+    <br><br>
+    <button id="click_event_id">Event</button>
+    <button id="dblclick_event_id">Double Event</button>
+
+    <br><br>
+    <hr>
+    <div class="box" id="effect_id">Effect</div>
+    <!-- <script>
+        $(document).ready(function () {
+            $("#effect_id").click(function () {
+                $("#effect_id").effect("bounce", "fast")
+            });
+        });
+    </script> -->
+    <br><br><br><br><br><br><br><br>
+    <button id="effect_button">Start Animation</button><br><br>
+    <button id="show_button">Show</button>
+    <button id="hide_button">Hide</button>
+
+
+    <div class="box" id="fade_id">Fade</div>
+    <script>
+        $(document).ready(function () {
+            $("#fade_id").click(function () {
+                $("#fade_id").effect("fade", "slow")
+            });
+        });
+    </script>
+
+    <p id="fade_parag_id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem excepturi eligendi mollitia
+        libero voluptatibus et dicta, perferendis tempora, est, rerum impedit. Itaque praesentium quas nobis quo optio!
+        Consectetur, voluptatem odio.</p>
+    <button id="fadeout_id">Fade Out</button>
+    <button id="fadein_id">Fade In</button>
+
+    <br><br>
+    <hr>
+    <!-- Attribute -->
+    <a id="attr_id" href="https://www.techcareer.net" target="_blank" id="">Go</a>
+    <button id="attr_button">
+        Anchor Redirect
+    </button>
+    <br><br>
+    <hr>
+    <!-- HTML -->
+    <div id="html_id">
+        <p>
+            Önceki yazılar
+        </p>
+    </div>
+    <button id="html_button">
+        Html
+    </button>
+    <button id="text_button">
+        Text
+    </button>
+    <br><br>
+    <hr>
+    <!-- CSS -->
+    <div id="box1" class="box">1.KUTU</div>
+    <div id="box2" class="box">2.KUTU</div>
+    <button style="display:block" id="btnChangeColor">jQuery Renk</button>
+
+
+
+    <!-- External JS -->
+    <script src="jQuery.js"></script>
+</body>
+
+</html>

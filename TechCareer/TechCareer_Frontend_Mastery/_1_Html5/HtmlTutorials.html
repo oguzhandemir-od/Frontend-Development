@@ -1,0 +1,338 @@
+<!-- HTML5 Standartlarında -->
+<!DOCTYPE html>
+<!-- Lang: English -->
+<html lang="en">
+<!-- head -->
+
+<head>
+    <title>
+        Techcareer Frontend Mastery
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <!-- Türkçe dil desteği -->
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="keywords" content="html5,css3,bootstrap5,tailwind,js,jquery,react js">
+    <!-- Responsive Design (RD) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Codes  -->
+
+    <!-- Header Start Codes -->
+    <header id="header_id"></header>
+    <!-- Header End Codes -->
+
+    <!-- Main Start Codes -->
+    <main id="main_id">
+        <section id="about_me">
+            <!-- Form + Table -->
+            <table border="1" width="100%">
+                
+                
+                <tbody>
+                    <tr>
+                        <td><label for="" id="uname">Adınız</label></td>
+                        <td><input type="text" 
+                            id="uname" 
+                            required autofocus 
+                            title="Adınız" 
+                            placeholder="Adınız..."
+                            ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="uemail">Emailiniz</label>
+                            </label></td>
+                        <td><input type="email" 
+                            id="uemail" 
+                            title="Emailiniz" 
+                            placeholder="Emailiniz..." 
+                            required
+                            ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="upassword">Şifreniz</label>
+                            </label></td>
+                        <td><input type="password" 
+                            id="upassword" 
+                            title="Şifreniz" 
+                            placeholder="Şifreniz..." 
+                            required
+                            ></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="reset" value="Temizle">
+                            <button type="submit">Gönder 2</button>
+                        </td>
+                        
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5">&copy; Bütün haklar saklıdır.</th>
+                    </tr>
+                </tfoot>
+            </table>
+             <br>
+             <hr>
+            <!-- Table -->
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Adı</th>
+                        <th>Soyadı</th>
+                        <th>Email</th>
+                        <th>Parola</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Adı 1</td>
+                        <td>Soyadı 1</td>
+                        <td>Email 1</td>
+                        <td>Parola 1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Adı 2</td>
+                        <td>Soyadı 2</td>
+                        <td>Email 2</td>
+                        <td>Parola 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5">&copy; Bütün haklar saklıdır.</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <hr> 
+            <!-- Form -->
+            <form action="#!" method="get" autocomplete="on" target="_blank">
+                <label for="" id="uname">Adınız</label>
+                <input type="text" 
+                id="uname" 
+                required autofocus 
+                title="Adınız" 
+                placeholder="Adınız..."
+                ><br>
+
+                <label for="uemail">Emailiniz</label>
+                <input type="email" 
+                id="uemail" 
+                title="Emailiniz" 
+                placeholder="Emailiniz..." 
+                required
+                ><br>
+
+                <label for="upassword">Şifreniz</label>
+                <input type="password" 
+                id="upassword" 
+                title="Şifreniz" 
+                placeholder="Şifreniz..." 
+                required
+                ><br>
+                
+                <input type="reset" value="Temizle">
+                <input type="submit" value="Gönder">
+                <button type="submit">Gönder 2</button>
+            </form>
+            <br>
+            <hr>
+            <!-- DataList -->
+             <input type="text" list="frontend" name="techcareer">
+            <datalist id="frontend">
+                <option value="Html5"></option>
+                <option value="Css3"></option>
+                <option value="Bootstrap5"></option>
+                <option value="Tailwind"></option>
+                <option value="Js"></option>
+                <option value="Jquery"></option>
+                <option value="Reach"></option>
+            </datalist>
+            <br>
+            <hr>
+            <!-- Tanımlı Listeler -->
+            <dl>
+                <dt>HTML</dt>
+                <dd>Listeler</dd>
+                <dt>CSS</dt>
+                <dd>Responsive Design</dd>
+            </dl>
+            <br>
+            <hr>
+            <!-- Düzenli Liste -->
+            <ol start="2" type="A">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+            </ol>
+            <br>
+            <hr>
+            <!-- Düzenli Liste -->
+            <ol start="2" type="i">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+            </ol>
+            <br>
+            <hr>
+            <!-- Düzenli Liste -->
+            <ol start="5">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+            </ol>
+            <br>
+            <hr>
+            <!-- Düzenli Liste -->
+            <ol>
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+            </ol>
+            <br>
+            <hr>
+            <!-- Düzenli Olmayan Liste -->
+            <ul>
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+            </ul>
+            <br>
+            <hr>
+            <!-- Map -->
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ankara+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
+            <br>
+            <hr>
+            <!-- IFrame -->
+            <iframe src="https://www.techcareer.net" frameborder="0" width="100%" height="500" title="TechCareer"></iframe>
+            <br>
+            <hr>
+            <!-- Emoji -->
+            <p>&#128512;</p>
+            <p>&#128507;</p>
+            <br>
+            <hr>
+            <!-- Video -->
+            <video controls width="100%" height="250">
+                <source src="video.ogg" type="video/ogg">
+                <source src="video.mp4" type="video/mpeg">
+                Your browser does not support the video element.
+            </video>
+            <br>
+            <hr>
+            <!-- Music -->
+            <audio controls>
+                <source src="music.ogg" type="audio/ogg">
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+            <hr>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/901122334455?text=Merhaba, size nasıl yardımcı olabiliriz?" target="_blank">WhatsApp Hattı</a><br>
+            <br>
+            <hr>
+            <!-- Tel -->
+            <a href="tel:+1122334455" target="_blank">Tel Number</a><br>
+            <br>
+            <hr>
+            <!-- Mail -->
+            <a href="mailto:abc@example.com" target="_blank">Mail</a><br>
+            <br>
+            <hr>
+            <!-- Resim+Link -->
+            <a href="https://www.techcareer.net" target="_blank" title="TechCareer">
+                <img src="../images/doga_resmi.jpg" width="50%" alt="There is no picture" title="Bu bir doğa resmidir.">
+            </a>
+            <br>
+            <hr>
+            <!-- Link -->
+            <a href="https://www.techcareer.net" target="_blank" title="TechCareer">TechCareer</a>
+            <br>
+            <hr>
+            <!-- Image -->
+             <img src="../images/doga_resmi.jpg" width="50%" alt="There is no picture" title="Bu bir doğa resmidir.">
+            <br>
+            <hr>
+            <!-- Formatter -->
+             <b>Bold</b><br>
+             <i>Italic</i><br>
+             <big>Big</big><br>
+             <small>Small</small><br>
+
+             <code>
+                System.out.printlin("Welcome");
+             </code><br>
+
+            <mark>Fosforlu Kalem</mark><br>
+            10<sup>5</sup><br>
+            log<sub>2</sub>n <br>
+            <u>Html</u><br>
+            <del>1000</del>TL 999 TL <br>
+            <em>Vurgulama</em><br>
+            <mark><i><del>1000</del>TL</i> 999 TL <br></mark><br>
+            <br>
+            <hr>
+            <!-- h${Heading-&}*6 -->
+            <h1>Heading-1</h1>
+            <h2>Heading-2</h2>
+            <h3>Heading-3</h3>
+            <h4>Heading-4</h4>
+            <h5>Heading-5</h5>
+            <h6>Heading-6</h6>
+            <br>
+            <hr>
+            <!-- Paragraf -->
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, facilis? Blanditiis voluptates provident adipisci consectetur! Repellendus modi quidem unde obcaecati quod! Deleniti labore, nesciunt fuga facere quos voluptates libero cum!
+             Minima, laborum odit fuga eos quod accusantium voluptas, quis nam recusandae nihil ipsam natus quia modi? Minus consequatur natus, delectus, quibusdam aliquid tempore laborum similique ullam corrupti voluptas facere itaque.</p>
+        </section>
+    </main>
+    <!-- Main End Codes -->
+
+    <!-- Footer Start Codes -->
+    <footer id="footer_id"></footer>
+    <!-- Footer End Codes -->
+
+
+    <!-- End Codes -->
+</body>
+
+</html>
